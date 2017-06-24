@@ -1,0 +1,24 @@
+.coubHashBox {
+    padding: 15px;
+    width: 250px;
+}
+.res {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3px;
+    border: 1px solid #ccc;
+    height: 70px;
+}
+
+.but {
+    margin-bottom: 10px;
+    padding: 4px 7px;
+    border-radius: 2px;
+    border: none;
+    background: #d6d3d3;
+    cursor: pointer;
+}
+.flexLine{
+    display: flex;
+    justify-content: space-between;
+}

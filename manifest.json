@@ -1,0 +1,41 @@
+{
+    "manifest_version": 2,
+    "name": "CoubHash",
+    "version": "1.0",
+    "icons" : {
+        "128" : "icons/icon128.png"
+    },
+    "background": {
+        "scripts": [
+            "js/jquery-3.2.1.min.js",
+            "js/background.js",
+            "js/pevents.js"
+        ],
+        "run_at": "document_end"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": [
+                "js/jquery-3.2.1.min.js",
+                "js/pevents.js",
+                "js/content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "http://*/*", "https://*/*",
+        "activeTab",
+        "storage",
+        "identity"
+    ],
+    "browser_action": {
+        "default_title" : "CoubHash",
+        "default_icon"  : "icons/icon19.png",
+        "default_popup" : "pages/popup.html",
+        "style_css"     : "css/style.css",
+        "javascript"    : "js/popup.js"
+    }
+
+}
